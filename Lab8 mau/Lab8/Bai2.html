@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        nav{
+            width: 100%;
+            background-color: orangered;
+            border-radius: 5px;
+        }
+        nav>ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav>ul>li{
+            position: relative;
+        }
+        nav>ul>li>a{
+            display: block;
+            color: white;
+            font-variant: small-caps;
+            text-decoration: none;
+            padding: 13px 10px;
+        }
+        nav>ul>li>a:hover{
+            color: yellow;
+        }
+        .menu-con{
+            position: absolute;
+            list-style: none;
+            padding: 0;
+            border: 1px solid rgb(215, 211, 211);
+            display: none;
+        }
+        .menu-con a{
+            border-bottom: 1px gray dotted;
+            display: block;
+            padding: 10px 150px 10px 10px; 
+            text-decoration: none;
+            font-variant: small-caps;
+            color: orangered;
+            
+        }
+        nav>ul>li:hover>.menu-con{
+            display: block;
+        }
+        .menu-con a:hover{
+            background-color: orangered;
+            color: white;
+        }
+    </style>
+    <nav class="menu">
+        <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Liên hệ</a>
+            
+                <ul class="menu-con">
+                    <li><a href="">Mobile</a></li>
+                    <li><a href="">Email</a></li>
+                </ul>
+           
+        </li>
+        <li><a href="#">Góp ý</a></li>
+        <li><a href="#">Hỏi đáp</a></li>
+        </ul>
+       </nav>
+</body>
+</html>

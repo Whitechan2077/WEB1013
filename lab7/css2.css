@@ -1,0 +1,59 @@
+.col-25 {
+    width: 25%;
+    float: left;
+    height: 200px;
+    margin: 10x;
+}
+
+.prod {
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: 0 0 5px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    margin: 5px;
+}
+.prod>.name{
+    font-variant: small-caps;
+    color: orange;
+    font-size: 25px;
+}
+
+.prod>.image {
+    max-width: 98%;
+    height: 150px;
+    margin-bottom: 10px;
+  ;
+}
+
+.prod>.price {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 25px;
+    color: orange;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.prod>.icon{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 25px;
+    height: 100px;
+}
+.prod>.newicon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.prod>.newicon>img{
+    border-radius: 10px;
+}
+.col-26 {
+    width: 25%;
+    float: left;
+    height: 200px;
+    margin: 10x;
+    margin-top: 20px;
+}

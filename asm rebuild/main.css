@@ -1,0 +1,46 @@
+.container{
+    width: 1533px;
+    background-color: aqua;
+    margin: 0 auto;
+}
+.nav{
+    background-color: #272f54;
+    padding: 5px;
+ 
+}
+.nav>ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.nav>ul>li{
+    padding: 25px;
+    position: relative;
+}
+.nav>ul>li>a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.menu-con{
+    width: 200px;
+    display: none;
+    top: 60px;
+    padding: 0px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 1px grey;
+}
+.menu-con>li{
+    list-style: none;  
+    border-bottom: 1px grey solid;
+}
+.menu-con>li>a{
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+.nav>ul>li:hover>.menu-con{
+    transition: opacity 230ms;
+    display: block;
+}

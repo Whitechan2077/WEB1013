@@ -1,0 +1,43 @@
+.bao{
+    width: 25%;
+    height: 180px;
+    float: left;
+}
+.bao>.sanpham{
+    box-shadow: 0 0 5px gray;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+.sanpham>.images{
+    max-width: 98%;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.sanpham>.icon{
+    width: 25px;
+    height: 81px;
+    bottom: 5px;
+    right: 18px;
+    position: absolute;
+}
+.sanpham>.new{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+}
+.sanpham>.price{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: orange;
+}
+.sanpham>.name{
+    font-variant: small-caps;
+    color: orange;
+}

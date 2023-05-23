@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Chivo+Mono:ital,wght@1,200;1,400&family=Cinzel:wght@400;600&family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background: url(./img/header.jpg) center;
+            background-size: 100%;
+            height: 200px;
+            position: relative;
+        }
+        header h1{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            text-shadow: 0 0 10px orangered;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 1px;
+        }
+        nav{
+            width: 100%;
+            background-color: orangered;
+            border-radius: 5px;
+        }
+        nav>ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav>ul>li{
+            position: relative;
+        }
+        nav>ul>li>a{
+            display: block;
+            color: white;
+            font-variant: small-caps;
+            text-decoration: none;
+            padding: 13px 10px;
+        }
+        nav>ul>li>a:hover{
+            color: yellow;
+        }
+        .menu-con{
+            position: absolute;
+            list-style: none;
+            padding: 0;
+            border: 1px solid rgb(215, 211, 211);
+            display: none;
+        }
+        .menu-con a{
+            display: block;
+            padding: 10px 150px 10px 10px; 
+            text-decoration: none;
+            font-variant: small-caps;
+            color: orangered;
+            
+        }
+        nav>ul>li:hover>.menu-con{
+            display: block;
+        }
+        .menu-con a:hover{
+            background-color: orangered;
+            color: white;
+        }
+        article{
+            width: 70%;
+        
+            float: left;
+        }
+        aside{
+            width: 20%;
+            float: right;
+
+        }
+        aside>ul{
+            margin: 5px;
+            list-style: none;
+            border: 1px solid gray;
+            border-radius:10px ;
+        }
+        aside>ul>li{
+            border-bottom: 1px dashed orangered;
+        }
+        aside>ul>li:last-child{
+            border: 0;
+        }
+        aside>ul>li>a{
+            display: block;
+            padding: 10px 0 10px 25px;
+            text-decoration: none;
+            color: orangered;
+            font-variant: small-caps;
+        }
+        hr{
+            clear: both;
+        }
+        footer{
+            clear: both;
+            background-color: rgb(207, 255, 255);
+            text-align: center;
+            line-height: 40px;
+            font-variant: small-caps
+        }
+    </style>
+    <div class="container">
+        <header>
+            <h1>FPT Polytechnic</h1>
+        </header>
+        <nav class="menu">
+            <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a>
+                
+                    <ul class="menu-con">
+                        <li><a href="">Mobile</a></li>
+                        <li><a href="">Email</a></li>
+                    </ul>
+               
+            </li>
+            <li><a href="#">Góp ý</a></li>
+            <li><a href="#">Hỏi đáp</a></li>
+            </ul>
+           </nav>
+        
+            <article></article>
+            <aside>
+                <ul>
+                    <li><a href="">Máy tính xách tay</a></li>
+                    <li><a href="">Điện thoại di động</a></li>
+                    <li><a href="">Máy quay phim</a></li>
+                    <li><a href="">Máy chụp ảnh</a></li>
+                    <li><a href="">Tủ lạnh</a></li>
+                    <li><a href="">Đồng hồ đeo tay</a></li>
+                    <li><a href="">Đồng hồ treo tường</a></li>
+                    <li><a href="">Máy giặt</a></li>
+                    <li><a href="">Bàn là</a></li>
+                </ul>
+            </aside>
+        
+        <hr><hr>
+        <footer>FPT Polytechnic © 2017. All rights reserved</footer>
+    </div>
+</body>
+</html>

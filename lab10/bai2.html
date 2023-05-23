@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-grp {
+            font-variant: small-caps;
+        }
+
+        .form-crtl:focus {
+            background-color: yellow;
+
+        }
+
+        .bt-crt {
+            padding: 8px 30px; 
+            outline:none;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            background-color: white;
+            color: orangered;
+            box-shadow: inset 0 0 20px blue;
+        }
+        .bt-crt:hover {
+            box-shadow: inset 0 0 20px orange;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="form-grp">
+            <label>Họ và tên</label>
+            <br>
+            <input class="form-crtl" type="text" />
+        </div>
+        <div class="form-grp">
+            <fieldset>
+                <legend>Giới tính</legend>
+                <label>Nam</label>
+                <input type="radio" name="sex" value="1">
+                <label>Nữ</label>
+                <input type="radio" name="sex" value="1">
+            </fieldset>
+        </div>
+        <div class="form-grp">
+            <label for="">Ngày sinh</label>
+            <br>
+            <input class="form-crtl" type="date" />
+        </div>
+        </div>
+        <div class="form-grp">
+            <label for="">Điểm</label>
+            <br>
+            <input type="number" min="0" max="10" step="0.25" class="form-crtl" />
+        </div>
+        <div class="form-grp">
+            <label for="">Nghề nghiệp</label>
+            <br>
+            <input class="form-crtl" list="job" />
+            <datalist id="job">
+                <option value="Bác sĩ"></option>
+                <option value="Giáo viên"></option>
+                <option value="Học sinh"></option>
+                <option value="Kỹ sư"></option>
+            </datalist>
+        </div>
+        <fieldset>
+            <legend>Sở thích</legend>
+            <input type="checkbox" />
+            <label>Thể thao</label>
+            <input type="checkbox" />
+            <label>Du lịch</label>
+            <input type="checkbox" />
+            <label>Âm nhạc</label>
+            <input type="checkbox" />
+            <label>Ẩm thực</label>
+        </fieldset>
+        <div class="form-grp">
+            <label>Ghi chú:</label>
+            <br>
+            <textarea class="form-crtl" name="" id="" cols="40" rows="5"></textarea>
+        </div>
+        <hr>
+        <div class="form-grp">
+            <button class="bt-crt">Đăng ký</button>
+            <button class="bt-crt">Nhập lại</button>
+        </div>
+    </form>
+</body>
+
+</html>

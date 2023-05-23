@@ -1,0 +1,51 @@
+b {
+    color: brown;
+}
+
+.doan1 {
+    color: red;
+}
+
+.doan2 {
+    color: green;
+}
+
+.doan3 {
+    color: blue;
+}
+
+.doan4 {
+    color: red;
+}
+
+i {
+    font-variant: small-caps;
+    font-size: 20px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+body {
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    text-shadow: 0 0 5px red;
+}
+
+.menu>a {
+    Font-variant: small-caps;
+    Color: blue;
+    Text-decoration: none;
+}
+
+.menu>a:visited {
+    color: green;
+}
+
+.menu>a:hover {
+    color: red;
+    text-decoration: underline;
+}

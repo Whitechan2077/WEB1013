@@ -1,0 +1,164 @@
+#container{
+    position: relative;
+    width: 1503px;
+    height: 350px;
+    background-color: blue;
+
+}
+.content{
+    display: flex;
+}
+#container>header{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    background-image: url(imgs/sucvat.jpg);
+}
+#container>nav{
+    width: 100%;
+    height: 50px;
+    background-color:orangered;
+    
+}
+nav>.menu1>a{
+   margin-left: 20px;
+   line-height: 50px;
+   text-decoration: none;
+   font-variant: small-caps;
+   color: white;
+   float: left;
+}
+nav>.menu2>a{
+    margin-right: 20px;
+    line-height: 50px;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: white;
+    float: right;
+ }
+ #container>header>nav{
+    position: absolute;
+    width: 21%;
+    height: 50px;
+    right: 0;
+    top: 0;
+    background-color: orangered;
+    border-bottom-left-radius: 30px;
+    box-shadow: -1px 7px 9px grey;
+}
+#container>header>nav>a{
+    margin-left: 20px;
+    line-height: 50px;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: white;
+    float: left; 
+}
+.i4{
+    bottom: 80px;
+    left: 50px;
+    position: absolute;
+}
+.i4>.fbt{
+    font-weight: bolder;
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serifs;
+    color: white;
+    text-decoration: dotted red ;
+    text-shadow: 0 0 5px orangered;
+}
+.i4>.slogan{
+    font-weight: bolder;
+    font-size: 43px;
+    color: orangered;
+    text-decoration: dotted red ;
+    font-variant: small-caps;
+}
+.vmenu{
+    border: 1px;
+    padding: 0;
+    margin: 5px;
+    list-style: none;
+    box-shadow: 0 0 5px orange;
+    border-bottom: 1px;
+}
+.vmenu>li>a{
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+    font-variant: small-caps;
+    padding-left: 30px;
+    font-size: larger;
+    background: url(imgs/download.jpg) no-repeat left center;
+}
+.vmenu>li{
+    border-bottom: 1px dotted;
+    border-color: orange;
+}
+.vmenu>li>a:hover{
+    background: url(imgs/a05d7d8be7bb09397fec6ea4d2709ef6.gif) no-repeat;
+    text-decoration: underline;
+    background-color: orange;
+}
+.col-25 {
+    width: 25%;
+    float: left;
+    height: 200px;
+    margin: 10x;
+}
+
+.prod {
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: 0 0 5px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    margin: 5px;
+}
+.prod>.name{
+    font-variant: small-caps;
+    color: orange;
+    font-size: 25px;
+}
+
+.prod>.image {
+    max-width: 98%;
+    height: 150px;
+    margin-bottom: 10px;
+  ;
+}
+
+.prod>.price {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 25px;
+    color: orange;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.prod>.icon{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 25px;
+    height: 100px;
+}
+.prod>.newicon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.prod>.newicon>img{
+    border-radius: 10px;
+}
+.col-26 {
+    width: 25%;
+    float: left;
+    height: 200px;
+    margin: 10x;
+    margin-top: 20px;
+}
+aside{
+    width: 25%;
+}
